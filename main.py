@@ -44,6 +44,20 @@ def main() -> int:
     out_path = os.path.join(out_dir, "entry.txt")
     with open(out_path, "w", encoding="utf-8", newline="\n") as f:
         f.write(text + "\n")
+    # Round-trip verification: read the file back and confirm it is
+    # byte-identical to the entry text we intended to write. A mismatch
+    # (truncated write, encoding issue, stray newline) must fail loudly
+    # rather than silently producing a wrong entry.
+    with open(out_path, "rb") as f:
+        written = f.read()
+    expected = (text + "\n").encode("utf-8")
+    if written != expected:
+        print(f"verification failed: {out_path} does not match the "
+              f"entry text ({len(written)} bytes on disk vs "
+              f"{len(expected)} expected)", file=sys.stderr)
+        return 1
+    print(f"verified {out_path}: read-back matches the entry text "
+          f"({len(written)} bytes)")
     print(f"wrote {out_path} ({len(text)} characters, "
           f"{len(encoded)} UTF-8 bytes, 2 lines)")
     return 0
