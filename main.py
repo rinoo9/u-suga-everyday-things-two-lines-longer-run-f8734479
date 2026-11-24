@@ -1,0 +1,53 @@
+#!/usr/bin/env python3
+"""Write the two-line entry for the make.fun bounty
+"Everyday Things, Two Lines, Longer Run" to /output/entry.txt.
+
+Line 1 explains one everyday thing (a toaster) to a 10-year-old in a
+single vivid sentence built on an analogy. Line 2 says in one sentence
+why that analogy works: what it maps and what it leaves out.
+"""
+
+import os
+import sys
+
+LINE_1 = (
+    "A toaster is a little sunbed for bread, where two glowing wires "
+    "hug each slice until it turns golden-brown and pops up, done."
+)
+LINE_2 = (
+    "It works because a sunbed and a toaster both brown things slowly "
+    "with heat on a timer, but it leaves out that the heat comes from "
+    "electric wires, not the sun, and bread cannot choose to stay pale."
+)
+
+ENTRY = LINE_1 + "\n" + LINE_2
+
+
+def main() -> int:
+    text = ENTRY
+    encoded = text.encode("utf-8")
+    # Gate: UTF-8 text of 1-400 characters, exactly two lines.
+    if not 1 <= len(text) <= 400:
+        print(f"invalid entry: {len(text)} characters (need 1-400)",
+              file=sys.stderr)
+        return 1
+    lines = text.split("\n")
+    if len(lines) != 2 or any(not line.strip() for line in lines):
+        print("invalid entry: must be exactly two non-empty lines",
+              file=sys.stderr)
+        return 1
+    if text.strip() == "":
+        print("invalid entry: text is only whitespace", file=sys.stderr)
+        return 1
+    out_dir = "/output"
+    os.makedirs(out_dir, exist_ok=True)
+    out_path = os.path.join(out_dir, "entry.txt")
+    with open(out_path, "w", encoding="utf-8", newline="\n") as f:
+        f.write(text + "\n")
+    print(f"wrote {out_path} ({len(text)} characters, "
+          f"{len(encoded)} UTF-8 bytes, 2 lines)")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
