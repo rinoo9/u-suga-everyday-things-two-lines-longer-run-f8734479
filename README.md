@@ -16,4 +16,4 @@ An entry for the [make.fun](https://make.fun/bounty/u-suga-everyday-things-two-l
 python3 main.py
 ```
 
-This writes the two-line entry to `/output/entry.txt` (creating `/output` if needed) and validates that the text is UTF-8, exactly two lines, and 1–400 characters in total.
+This writes the two-line entry to `/output/entry.txt` (creating `/output` if needed) and validates that the text is UTF-8, exactly two lines, and 1–400 characters in total. After writing, it reads the file back and verifies it is byte-identical to the entry text, exiting non-zero if the round-trip check fails.
