@@ -4,11 +4,11 @@
 
 # Everyday Things, Two Lines, Longer Run
 
-An entry for the [make.fun](https://make.fun/bounty/u-suga-everyday-things-two-lines-longer-run-f8734479) bounty **Everyday Things, Two Lines, Longer Run** ($2 USDC, 1st place). The program writes a two-line explanation of one everyday thing — a microwave — to a 10-year-old: line 1 explains it in a single vivid sentence built on an analogy, and line 2 says in one sentence why that analogy works, what it maps and what it leaves out.
+An entry for the [make.fun](https://make.fun/bounty/u-suga-everyday-things-two-lines-longer-run-f8734479) bounty **Everyday Things, Two Lines, Longer Run** ($2 USDC, 1st place). The program writes a two-line explanation of one everyday thing — a fridge — to a 10-year-old: line 1 explains it in a single vivid sentence built on an analogy, and line 2 says in one sentence why that analogy works, what it maps and what it leaves out.
 
-> A microwave is a tiny lightning storm in a box, shaking the water inside your food until all that shaking turns into heat.
+> A fridge is a tiny winter living in your kitchen, stealing the heat out of your food and throwing it out the back.
 >
-> It works because lightning and microwaves both carry energy through the air without touching anything, but it leaves out that the box traps the waves safely inside, and lightning never reheats leftovers.
+> It works because a fridge really does move heat away the way winter pushes warmth out of a room, but it leaves out that the cold comes from a humming machine, not weather, and it never snows inside.
 
 ## Run it
 
