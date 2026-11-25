@@ -2,7 +2,7 @@
 """Write the two-line entry for the make.fun bounty
 "Everyday Things, Two Lines, Longer Run" to /output/entry.txt.
 
-Line 1 explains one everyday thing (a microwave) to a 10-year-old in a
+Line 1 explains one everyday thing (a fridge) to a 10-year-old in a
 single vivid sentence built on an analogy. Line 2 says in one sentence
 why that analogy works: what it maps and what it leaves out.
 """
@@ -11,13 +11,14 @@ import os
 import sys
 
 LINE_1 = (
-    "A microwave is a tiny lightning storm in a box, shaking the water "
-    "inside your food until all that shaking turns into heat."
+    "A fridge is a tiny winter living in your kitchen, stealing the "
+    "heat out of your food and throwing it out the back."
 )
 LINE_2 = (
-    "It works because lightning and microwaves both carry energy through "
-    "the air without touching anything, but it leaves out that the box "
-    "traps the waves safely inside, and lightning never reheats leftovers."
+    "It works because a fridge really does move heat away the way "
+    "winter pushes warmth out of a room, but it leaves out that the "
+    "cold comes from a humming machine, not weather, and it never "
+    "snows inside."
 )
 
 ENTRY = LINE_1 + "\n" + LINE_2
