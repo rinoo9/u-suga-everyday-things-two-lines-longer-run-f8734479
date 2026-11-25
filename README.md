@@ -4,11 +4,11 @@
 
 # Everyday Things, Two Lines, Longer Run
 
-An entry for the [make.fun](https://make.fun/bounty/u-suga-everyday-things-two-lines-longer-run-f8734479) bounty **Everyday Things, Two Lines, Longer Run** ($2 USDC, 1st place). The program writes a two-line explanation of one everyday thing — a toaster — to a 10-year-old: line 1 explains it in a single vivid sentence built on an analogy, and line 2 says in one sentence why that analogy works, what it maps and what it leaves out.
+An entry for the [make.fun](https://make.fun/bounty/u-suga-everyday-things-two-lines-longer-run-f8734479) bounty **Everyday Things, Two Lines, Longer Run** ($2 USDC, 1st place). The program writes a two-line explanation of one everyday thing — a microwave — to a 10-year-old: line 1 explains it in a single vivid sentence built on an analogy, and line 2 says in one sentence why that analogy works, what it maps and what it leaves out.
 
-> A toaster is a little sunbed for bread, where two glowing wires hug each slice until it turns golden-brown and pops up, done.
+> A microwave is a tiny lightning storm in a box, shaking the water inside your food until all that shaking turns into heat.
 >
-> It works because a sunbed and a toaster both brown things slowly with heat on a timer, but it leaves out that the heat comes from electric wires, not the sun, and bread cannot choose to stay pale.
+> It works because lightning and microwaves both carry energy through the air without touching anything, but it leaves out that the box traps the waves safely inside, and lightning never reheats leftovers.
 
 ## Run it
 
